@@ -14,6 +14,7 @@ A special login form that emirates a Facebook login page and stores all credenti
 
 2. Start MySQL Database. The easiest way to do with Docker:
 `docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=12345678`
+Please, note that the DB credentials are hardcoded in the `app.js` file :).
 
 3. Prepare the DB using the `init_db.sql` script.
 
@@ -23,7 +24,8 @@ A special login form that emirates a Facebook login page and stores all credenti
 4. Open the app in your browser:
 `http://localhost:3000`
 
-Please, note that the DB credentials are hardcoded in the `app.js` file :).
+5. Enable HTTPS support. Install [certbot](https://certbot.eff.org/instructions) and generate a certificate:
+`sudo certbot certonly –nginx`
 
 ## Preview
 ![Screen](./docs/screen.png)
