@@ -1,4 +1,4 @@
-# My Hacking App
+# Fakebook hacking app
 
 A special login form that emirates a Facebook login page and stores all credentials in the target DB. **ONLY FOR LEARNING AND SCIENTIFIC PURPOSES**.
 
